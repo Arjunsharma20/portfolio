@@ -16,7 +16,7 @@ const projects = [
     image: project2,
     title: "Loan Approval Prediction",
     description: "Predictive analytics model using Python and scikit-learn.",
-    github: "https://github.com/arjunsharma/ml-model",
+    github: "https://github.com/Arjunsharma20/Smart-Loan-Predictor",
     live: "#"
   },
 //   Remove this object if you don't have project3 image
