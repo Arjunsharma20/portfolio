@@ -1,0 +1,104 @@
+.hero {
+  padding: 60px 50px 100px 50px;
+  text-align: center;
+  background: #020202; /* matches the rest of the portfolio */
+  color: #fff;
+}
+
+.rounded-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.hero h1 span {
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #ccc;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+.hero-action {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.hero-connect,
+.hero-resume {
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 24px; /* increased to match navbar size */
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  letter-spacing: 1px;
+}
+
+/* Connect button gradient like navbar */
+.hero-connect {
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  color: #fff;
+}
+
+.hero-connect:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(186, 35, 225, 0.5);
+}
+
+/* Resume button with outline */
+.hero-resume {
+  background: none;
+  border: 2px solid #B923E1;
+  color: #B923E1;
+}
+
+.hero-resume:hover {
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(186, 35, 225, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-action {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .rounded-image {
+    width: 150px;
+    height: 150px;
+  }
+}

@@ -1,0 +1,211 @@
+.about {
+  padding: 80px 50px;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700; /* make it bolder */
+  margin-bottom: 50px;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* for non-webkit browsers */
+  letter-spacing: 1px; /* subtle spacing for readability */
+}
+.about-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 70%;
+  object-fit: cover;
+  object-position: top center; /* focuses on the upper part of the image (your head) */
+}
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: flex-start;
+}
+.skill:hover .skill-level {
+  transform: scaleX(1.05); /* slightly grows the filled bar */
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px rgba(186, 35, 225, 0.6); /* glow effect */
+}
+.skill-level {
+  height: 100%;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  border-radius: 50px;
+  transform-origin: left;
+  transition: all 0.4s ease;
+}
+.about-achievement {
+  flex: 1;
+  text-align: center;
+  background: #f0f0f0;
+  padding: 20px 15px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-achievement:hover {
+  transform: translateY(-10px); /* lifts up */
+  box-shadow: 0px 10px 25px rgba(186, 35, 225, 0.4); /* colored glow */
+}
+
+.about-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.read-more-btn {
+  display: inline-block;
+  margin-bottom: 30px;
+  padding: 10px 25px;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.read-more-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(186, 35, 225, 0.5);
+}
+
+.about-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer; /* changes cursor to indicate hover */
+}
+
+.about-image:hover {
+  transform: scale(1.05); /* slightly zooms in */
+  box-shadow: 0 10px 25px rgba(186, 35, 225, 0.4); /* subtle purple glow */
+}
+
+.about-right {
+  flex: 2;
+}
+
+.about-right p {
+  font-size: 20px;
+  line-height: 35px;
+  margin-bottom: 30px;
+}
+
+
+.about-title {
+  text-align: center;
+  font-size: 55px;
+  font-weight: 800;
+  margin: 0 auto 50px;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 2px;
+  display: inline-block;
+  position: relative;
+}
+
+/* Underline matches text width */
+.about-title::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: #B923E1;
+  width: 100%;          /* match the width of the text */
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+  margin-top: 5px;      /* space between text and line */
+}
+
+.about-title:hover::after {
+  transform: scaleX(1);
+}
+
+
+.about-skills .skill {
+  margin-bottom: 20px;
+}
+
+.skill p {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 15px;
+  background: #ddd;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+
+.skill-level {
+  height: 100%;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  border-radius: 50px;
+}
+
+/* Achievements */
+.about-achievements {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.about-achievement {
+  flex: 1;
+  text-align: center;
+  background: #f0f0f0;
+  padding: 20px 15px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+.about-achievement h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #B923E1;
+}
+
+.about-achievement p {
+  font-size: 18px;
+  color: #555;
+}
+.about-achievement {
+  flex: 1;                        
+  min-width: 200px;               
+  text-align: center;
+  background: #f0f0f0; /* default background */
+  padding: 20px 15px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.about-achievement:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 25px rgba(186, 35, 225, 0.4);
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  color: #fff; /* text color changes on hover */
+}
+
+.about-achievement:hover h2,
+.about-achievement:hover p {
+  color: #fff; /* ensures headings and descriptions remain readable */
+}

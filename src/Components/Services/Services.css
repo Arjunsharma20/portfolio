@@ -1,0 +1,121 @@
+.services {
+  padding: 80px 50px;
+  background: #080808;
+}
+
+.services-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 800;
+  margin: 0 auto 50px;
+  display: inline-block;                 /* needed for gradient text */
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  -webkit-background-clip: text;         /* Safari/Chrome */
+  -webkit-text-fill-color: transparent;  /* Safari/Chrome */
+  background-clip: text;                 /* non-webkit browsers */
+  color: black;                           /* fallback color if gradient fails */
+  letter-spacing: 2px;
+  position: relative;
+}
+.services-title::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+  margin-top: 5px;
+}
+
+.services-title:hover::after {
+  transform: scaleX(1);
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.service-card {
+  flex: 1 1 45%;
+  min-width: 250px;
+  background: #fff; /* default background */
+  padding: 30px 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* added background transition */
+  cursor: pointer;
+  color: #080808;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(186, 35, 225, 0.4);
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%); /* new hover background */
+  color: #fff; /* text color on hover */
+}
+
+.service-card:hover .service-title,
+.service-card:hover .service-description {
+  color: #fff; /* make text readable on gradient */
+}
+
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(186, 35, 225, 0.4);
+}
+
+.service-icon {
+  font-size: 50px;
+  color: #B923E1;
+  margin-bottom: 20px;
+}
+
+.service-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #080808;
+}
+
+.service-description {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.read-more-btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.read-more-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(186, 35, 225, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .services-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 100%;
+  }
+}

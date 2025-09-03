@@ -1,0 +1,165 @@
+.contact {
+  padding: 80px 50px;
+  background: #0d0d0d;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-subtitle {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* Left side */
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+}
+
+.contact-info h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #DA7C25;
+}
+
+.contact-info .contact-text {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Center the Connect with Me section */
+.contact-info h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #B923E1;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center; /* Center icons horizontally */
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #B923E1;
+  font-size: 22px;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #DA7C25;
+  transform: translateX(5px);
+}
+
+.social-id {
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Right side */
+.contact-form-wrapper {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Status message */
+.contact-status {
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.contact-status.success {
+  color: #00ff99;
+}
+
+.contact-status.error {
+  color: #ff4d4d;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  resize: none;
+}
+
+/* Send button */
+.contact-btn {
+  padding: 15px 25px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(186, 35, 225, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .social-icons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .social-icons a {
+    font-size: 28px;
+  }
+
+  .social-id {
+    display: none; /* Hide IDs on small screens for cleaner look */
+  }
+}

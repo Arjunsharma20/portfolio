@@ -1,0 +1,193 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background: #0d0d0d;
+  color: #fff;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  padding: 80px 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.hero img {
+  max-width: 280px;
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 8px 20px rgba(186, 35, 225, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.hero img:hover {
+  transform: scale(1.05);
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 800;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 20px auto;
+  color: #ccc;
+  line-height: 1.8;
+}
+
+.hero-action {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.hero-action a,
+.hero-action button {
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-action a:hover,
+.hero-action button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(186, 35, 225, 0.5);
+}
+
+/* Achievements Section */
+.achievements {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.achievements-title {
+  font-size: 42px;
+  font-weight: 800;
+  margin-bottom: 50px;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.achievements-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.achievement-card {
+  background: #1a1a1a;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(186, 35, 225, 0.5);
+}
+
+.achievement-card h2 {
+  font-size: 28px;
+  color: #DA7C25;
+  margin-bottom: 10px;
+}
+
+.achievement-card p {
+  font-size: 16px;
+  color: #ccc;
+}
+
+/* Contact Section */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 60px 20px;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 38px;
+  }
+  .hero p {
+    font-size: 16px;
+  }
+  .achievements-title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero p {
+    font-size: 15px;
+  }
+  .achievements-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 26px;
+  }
+  .hero p {
+    font-size: 14px;
+  }
+  .hero-action a,
+  .hero-action button {
+    width: 100%;
+    text-align: center;
+  }
+  .achievements-wrapper {
+    grid-template-columns: 1fr;
+  }
+}

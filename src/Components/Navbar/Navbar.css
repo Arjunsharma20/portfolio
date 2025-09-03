@@ -1,0 +1,114 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 17px;
+  position: relative;
+}
+
+/* Logo */
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 60px;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.nav-menu li {
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nav-menu li:hover {
+  transform: scale(1.1);
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Connect Button */
+.nav-connect {
+  padding: 12px 28px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-connect:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(186, 35, 225, 0.5);
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background: #fff;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger Animation */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    flex-direction: column;
+    background: #111;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+  }
+
+  .nav-menu.active {
+    right: 10px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-connect {
+    display: none; /* hide button inside navbar for small screens */
+  }
+}

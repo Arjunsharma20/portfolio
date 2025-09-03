@@ -1,0 +1,92 @@
+.mywork {
+  padding: 80px 50px;
+  background: #0d0d0d;
+}
+
+.mywork-title {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 50px;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 2px;
+  display: inline-block;
+}
+
+.mywork-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.mywork-card {
+  background: #fff;
+  flex: 1 1 300px;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.mywork-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(186, 35, 225, 0.4);
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  color: #fff;
+}
+
+.mywork-card:hover .mywork-title-card,
+.mywork-card:hover .mywork-description,
+.mywork-card:hover a {
+  color: #fff;
+}
+
+.mywork-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.mywork-title-card {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.mywork-description {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.mywork-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #B923E1;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.mywork-links a:hover {
+  color: #DA7C25;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .mywork-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mywork-card {
+    width: 100%;
+  }
+}

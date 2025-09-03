@@ -1,0 +1,63 @@
+.certifications {
+  padding: 80px 20px;
+  background: #0d0d0d;
+  color: #fff;
+  text-align: center;
+}
+
+.cert-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cert-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cert-card {
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 20px;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(186, 35, 225, 0.5);
+}
+
+.cert-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #DA7C25;
+}
+
+.cert-card p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+.cert-card a {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.cert-card a:hover {
+  background: linear-gradient(267deg, #B923E1 0.36%, #DA7C25 102.06%);
+}
